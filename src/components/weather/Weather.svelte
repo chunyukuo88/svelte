@@ -9,8 +9,6 @@
     const humidity = fetchedWeatherData.main.humidity;
     weatherString = `${temp}° at ${humidity}% humidity`;
   });
-
-  // console.log(process.env.WEATHER_API_KEY);
 </script>
 
 <div class="weather-string">
