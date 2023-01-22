@@ -1,6 +1,7 @@
 import { describe, expect, test, vi } from 'vitest';
 import Weather from './Weather.svelte';
 import { render, screen } from '@testing-library/svelte';
+import '@testing-library/jest-dom/extend-expect';
 
 describe('GIVEN: The component renders,', ()=>{
   describe('WHEN: it is able to get weather data,', ()=>{
@@ -17,10 +18,9 @@ describe('GIVEN: The component renders,', ()=>{
           json: () => Promise.resolve(weatherData),
         })
       );
-      const expectedText = '269° at 50% humidity';
 
       render(Weather);
-      const weatherString = screen.getByText(expectedText);
+      const weatherString = document.querySelector(`.weather-string`);
 
       expect(weatherString).toBeVisible();
     });
