@@ -4,6 +4,7 @@ export const Messages = {
 };
 
 export const weatherEmoji = {
+  'overcast clouds': '☁️',
   'light snow': '❄️',
   'rain': '🌧️',
 };

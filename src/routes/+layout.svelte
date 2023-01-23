@@ -7,6 +7,7 @@
 
 <script>
   import Weather from '../components/weather/Weather.svelte';
+  import { confetti } from '@neoconfetti/svelte';
 </script>
 
 <div class="app">
@@ -18,5 +19,6 @@
     <li><Weather /></li>
   </ul>
 </div>
+<div use:confetti />
 
 <slot></slot>

@@ -29,6 +29,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@supabase/supabase-js": "^2.4.1",
 		"@testing-library/jest-dom": "^5.16.5",
 		"dotenv": "^16.0.3",
 		"vite-plugin-environment": "^1.1.3"
