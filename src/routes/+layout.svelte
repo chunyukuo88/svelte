@@ -4,10 +4,12 @@
 
 <div class="app">
   <ul>
-    <li>about</li>
-    <li>blog</li>
-    <li>games</li>
-    <li>admin</li>
+    <li><a href="/about">about</a></li>
+    <li><a href="/blog">blog</a></li>
+    <li><a href="/games">games</a></li>
+    <li><a href="/admin">admin</a></li>
     <li><Weather /></li>
   </ul>
 </div>
+
+<slot></slot>
