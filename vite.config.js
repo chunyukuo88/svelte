@@ -7,6 +7,10 @@ const config = {
 		sveltekit(),
 		env('all'),
 	],
+	server:{
+		port:3000,
+		strictPort:false,
+	},
 	test: {
 		globals: true,
 		environment: "jsdom",
